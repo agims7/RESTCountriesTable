@@ -82,6 +82,18 @@ p {
     border-bottom: 1px dotted #4082C1;
 }
 
+@media (max-width: 1200px) {
+    body {
+        background-position: 20% 20%;
+    }
+}
+
+@media (max-width: 800px) {
+    body {
+        background-position: 25% 25%;
+    }
+}
+
 @media (max-width: 400px) {
 	body {
         background-position: 30% 30%;
