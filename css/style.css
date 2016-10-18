@@ -1,3 +1,128 @@
+@import url(https://fonts.googleapis.com/css?family=Didact+Gothic|PT+Sans);
+
+* {
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 20px;
+}
+
+body {
+    background-image: url(http://www.pixelstalk.net/wp-content/uploads/2016/04/Planet-Earth-4K-Wallpaper.jpg);
+    background-size: auto auto;
+    background-repeat: repeat;
+    background-position: 10% 10%;
+}
+
 ul {
     list-style-type: none;
+}
+
+h1 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 55px;
+    text-align: center;
+}
+
+h1, h2, h4, #input, #button, #countries {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+input, button {
+    color: black;
+}
+
+div {
+    margin: 10px 0;
+}
+
+.box {
+    width: 400px;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #4082C1;
+    background-color: rgba(85, 113, 143, 0.75);
+    border-radius: 30px;
+}
+
+.countryBox, 
+.capitalBox,
+.currenciesBox,
+.populationBox, 
+.subregionBox,
+.nativeNameBox {
+    font-weight: bold;
+}
+
+.country, 
+.capital,
+.currencies,
+.population, 
+.subregion,
+.nativeName,
+.countryBox, 
+.capitalBox,
+.currenciesBox,
+.populationBox, 
+.subregionBox,
+.nativeNameBox {
+    width: 50%;
+}
+
+p {
+    display: inline-block;
+    margin: 0;
+    padding: 7px 10px;
+    font-weight: lighter;
+}
+
+p {
+    border-bottom: 1px dotted #4082C1;
+}
+
+@media (max-width: 1200px) {
+    body {
+        background-position: 20% 20%;
+    }
+}
+
+@media (max-width: 800px) {
+    body {
+        background-position: 25% 25%;
+    }
+}
+
+@media (max-width: 400px) {
+	body {
+        background-position: 30% 30%;
+    }
+    .box {
+        width: 350px;	
+	}
+    h3, p {
+    padding: 4px 5px;
+    }
+    .country, 
+    .capital,
+    .currencies,
+    .population, 
+    .subregion,
+    .nativeName,
+    .countryBox, 
+    .capitalBox,
+    .currenciesBox,
+    .populationBox, 
+    .subregionBox,
+    .nativeNameBox {
+        width: 100%;
+        text-align: center;
+    }
+    p {
+        border-bottom: none;
+    }
+    p:nth-child(even) {
+        border-bottom: 1px dotted #4082C1;
+    }
 }
